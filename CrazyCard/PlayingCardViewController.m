@@ -7,8 +7,8 @@
 //
 
 #import "PlayingCardViewController.h"
-#import "PlayingCard.h"
 #import "PlayingCardDeck.h"
+#import "CardMatchGame.h"
 
 @interface PlayingCardViewController ()
 
@@ -27,5 +27,6 @@
 {
     return [[PlayingCardDeck alloc] init];
 }
+
 
 @end

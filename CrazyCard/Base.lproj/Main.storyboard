@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="wz9-Jp-iex">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Playing Card View Controller-->
+        <!--Playing Card View Controller - buttonView-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="PlayingCardViewController" sceneMemberID="viewController">
@@ -156,6 +156,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.25098040699958801" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="buttonView" id="7j3-PK-Opb"/>
                     <connections>
                         <outlet property="scoreLabel" destination="Pok-Xd-JbI" id="vFw-ag-2DM"/>
                         <outletCollection property="btnCollection" destination="s5V-nt-GQq" id="uJz-gD-lt3"/>
@@ -174,6 +175,297 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="228" y="-100"/>
+        </scene>
+        <!--Card Designed View Controller - designedView-->
+        <scene sceneID="vfM-cQ-b2R">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YRK-BP-xpS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="u0m-KZ-mSh" customClass="CardDesignedViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YfW-ui-hgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="omW-Z6-fVA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jy5-cV-GxX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view appearanceType="aqua" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5w-80-SSG" customClass="PlayingCardView">
+                                <rect key="frame" x="15" y="53" width="60" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="TDs-hf-mBx" appends="YES" id="kWf-6S-9yn"/>
+                                </connections>
+                            </view>
+                            <view appearanceType="aqua" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kMe-Tv-9M1" customClass="PlayingCardView">
+                                <rect key="frame" x="90" y="53" width="60" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="y0F-sc-5Oz" appends="YES" id="c1K-tE-2aW"/>
+                                </connections>
+                            </view>
+                            <view appearanceType="aqua" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcQ-89-Qnf" customClass="PlayingCardView">
+                                <rect key="frame" x="166" y="53" width="60" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="OvD-Gd-uPR" appends="YES" id="JHC-Zp-vsK"/>
+                                </connections>
+                            </view>
+                            <view appearanceType="aqua" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G38-lw-idi" customClass="PlayingCardView">
+                                <rect key="frame" x="240" y="53" width="60" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="6Wx-pJ-FjS" appends="YES" id="W5w-rT-vzG"/>
+                                </connections>
+                            </view>
+                            <view appearanceType="aqua" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60c-3S-hch" customClass="PlayingCardView">
+                                <rect key="frame" x="15" y="137" width="60" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QYU-F2-4PE" appends="YES" id="nsN-nV-Az5"/>
+                                </connections>
+                            </view>
+                            <view appearanceType="aqua" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zuQ-P8-Cem" customClass="PlayingCardView">
+                                <rect key="frame" x="90" y="137" width="60" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="t4J-NR-heQ" appends="YES" id="EP0-qx-xbX"/>
+                                </connections>
+                            </view>
+                            <view appearanceType="aqua" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d15-9l-upB" customClass="PlayingCardView">
+                                <rect key="frame" x="166" y="137" width="60" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="lxs-Lm-5Z3" appends="YES" id="Ijy-ys-ajt"/>
+                                </connections>
+                            </view>
+                            <view appearanceType="aqua" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5m-ip-exj" customClass="PlayingCardView">
+                                <rect key="frame" x="240" y="137" width="60" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ZF4-m8-AYS" appends="YES" id="6fC-Kf-eh2"/>
+                                </connections>
+                            </view>
+                            <view appearanceType="aqua" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iX0-vc-e0e" customClass="PlayingCardView">
+                                <rect key="frame" x="15" y="222" width="60" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="6gn-rB-BgR" appends="YES" id="m1s-qq-Wxf"/>
+                                </connections>
+                            </view>
+                            <view appearanceType="aqua" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wqi-8U-mJc" customClass="PlayingCardView">
+                                <rect key="frame" x="90" y="222" width="60" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Amm-8W-ZxX" appends="YES" id="sCK-zx-7K7"/>
+                                </connections>
+                            </view>
+                            <view appearanceType="aqua" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fcb-gm-Awe" customClass="PlayingCardView">
+                                <rect key="frame" x="166" y="222" width="60" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="rOa-u7-7jD" appends="YES" id="8FD-kV-BEw"/>
+                                </connections>
+                            </view>
+                            <view appearanceType="aqua" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dla-M4-9Hm" customClass="PlayingCardView">
+                                <rect key="frame" x="240" y="222" width="60" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="lUc-So-G3x" appends="YES" id="fSo-M0-4d9"/>
+                                </connections>
+                            </view>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sm7-Dk-q3d">
+                                <rect key="frame" x="15" y="423" width="135" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFR-RY-m8P">
+                                <rect key="frame" x="220" y="414" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ReStart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gameReStart:" destination="u0m-KZ-mSh" eventType="touchUpInside" id="Tfg-Up-AKO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="d15-9l-upB" firstAttribute="leading" secondItem="mcQ-89-Qnf" secondAttribute="leading" id="1hC-mV-28E"/>
+                            <constraint firstItem="QFR-RY-m8P" firstAttribute="leading" secondItem="sm7-Dk-q3d" secondAttribute="trailing" constant="70" id="1sf-Bf-lKw"/>
+                            <constraint firstItem="60c-3S-hch" firstAttribute="trailing" secondItem="C5w-80-SSG" secondAttribute="trailing" id="5bt-mb-PXH"/>
+                            <constraint firstItem="C5w-80-SSG" firstAttribute="leading" secondItem="Jy5-cV-GxX" secondAttribute="leading" constant="15" id="7oo-PR-bOS"/>
+                            <constraint firstItem="60c-3S-hch" firstAttribute="leading" secondItem="iX0-vc-e0e" secondAttribute="leading" id="AoN-xP-UM8"/>
+                            <constraint firstItem="G38-lw-idi" firstAttribute="leading" secondItem="mcQ-89-Qnf" secondAttribute="trailing" constant="14" id="BJt-Dg-CBx"/>
+                            <constraint firstItem="G38-lw-idi" firstAttribute="leading" secondItem="Jy5-cV-GxX" secondAttribute="leading" constant="240" id="BwS-n6-xov"/>
+                            <constraint firstItem="zuQ-P8-Cem" firstAttribute="top" secondItem="60c-3S-hch" secondAttribute="top" id="DNz-NZ-lz3"/>
+                            <constraint firstItem="mcQ-89-Qnf" firstAttribute="bottom" secondItem="kMe-Tv-9M1" secondAttribute="bottom" id="E7G-25-U75"/>
+                            <constraint firstAttribute="trailing" secondItem="G38-lw-idi" secondAttribute="trailing" constant="20" symbolic="YES" id="FtL-3C-9Of"/>
+                            <constraint firstItem="mcQ-89-Qnf" firstAttribute="bottom" secondItem="G38-lw-idi" secondAttribute="bottom" id="I7C-Q8-TYf"/>
+                            <constraint firstItem="wqi-8U-mJc" firstAttribute="trailing" secondItem="zuQ-P8-Cem" secondAttribute="trailing" id="IEe-Xx-gox"/>
+                            <constraint firstItem="mcQ-89-Qnf" firstAttribute="top" secondItem="kMe-Tv-9M1" secondAttribute="top" id="Ixg-gi-Vh7"/>
+                            <constraint firstItem="60c-3S-hch" firstAttribute="leading" secondItem="C5w-80-SSG" secondAttribute="leading" id="J32-CD-n7U"/>
+                            <constraint firstItem="C5w-80-SSG" firstAttribute="bottom" secondItem="kMe-Tv-9M1" secondAttribute="bottom" id="Kfp-pj-JQ9"/>
+                            <constraint firstItem="S5m-ip-exj" firstAttribute="bottom" secondItem="d15-9l-upB" secondAttribute="bottom" id="KgV-Di-LrC"/>
+                            <constraint firstItem="iX0-vc-e0e" firstAttribute="top" secondItem="Jy5-cV-GxX" secondAttribute="top" constant="222" id="NJk-Nb-1Rj"/>
+                            <constraint firstItem="kMe-Tv-9M1" firstAttribute="leading" secondItem="C5w-80-SSG" secondAttribute="trailing" constant="15" id="NRZ-CF-MSV"/>
+                            <constraint firstItem="iX0-vc-e0e" firstAttribute="leading" secondItem="sm7-Dk-q3d" secondAttribute="leading" id="NTS-Y2-Cas"/>
+                            <constraint firstItem="wqi-8U-mJc" firstAttribute="leading" secondItem="zuQ-P8-Cem" secondAttribute="leading" id="PTi-0x-XUH"/>
+                            <constraint firstItem="mcQ-89-Qnf" firstAttribute="leading" secondItem="kMe-Tv-9M1" secondAttribute="trailing" constant="16" id="Q3p-qA-vz9"/>
+                            <constraint firstItem="d15-9l-upB" firstAttribute="top" secondItem="zuQ-P8-Cem" secondAttribute="top" id="QZR-Vz-axX"/>
+                            <constraint firstItem="d15-9l-upB" firstAttribute="width" secondItem="S5m-ip-exj" secondAttribute="width" id="RME-A9-G3N"/>
+                            <constraint firstItem="G38-lw-idi" firstAttribute="top" secondItem="mcQ-89-Qnf" secondAttribute="top" id="Rap-tr-2ZD"/>
+                            <constraint firstItem="zuQ-P8-Cem" firstAttribute="trailing" secondItem="kMe-Tv-9M1" secondAttribute="trailing" id="SpU-Wu-sh4"/>
+                            <constraint firstItem="kMe-Tv-9M1" firstAttribute="top" secondItem="C5w-80-SSG" secondAttribute="top" id="TA2-kU-o6E"/>
+                            <constraint firstAttribute="bottom" secondItem="iX0-vc-e0e" secondAttribute="bottom" constant="266" id="UUz-2P-3BJ"/>
+                            <constraint firstItem="G38-lw-idi" firstAttribute="width" secondItem="mcQ-89-Qnf" secondAttribute="width" id="YDb-KH-gP6"/>
+                            <constraint firstItem="zuQ-P8-Cem" firstAttribute="bottom" secondItem="d15-9l-upB" secondAttribute="bottom" id="YEy-Lk-YFE"/>
+                            <constraint firstItem="S5m-ip-exj" firstAttribute="top" secondItem="d15-9l-upB" secondAttribute="top" id="ZC5-fy-Bw4"/>
+                            <constraint firstItem="60c-3S-hch" firstAttribute="top" secondItem="C5w-80-SSG" secondAttribute="bottom" constant="4" id="ZsU-6H-U4M"/>
+                            <constraint firstItem="QFR-RY-m8P" firstAttribute="bottom" secondItem="sm7-Dk-q3d" secondAttribute="bottom" id="cWk-Sm-SEt"/>
+                            <constraint firstItem="S5m-ip-exj" firstAttribute="trailing" secondItem="G38-lw-idi" secondAttribute="trailing" id="e4L-Fy-ERC"/>
+                            <constraint firstItem="mcQ-89-Qnf" firstAttribute="leading" secondItem="Jy5-cV-GxX" secondAttribute="leading" constant="166" id="fp1-Vb-zct"/>
+                            <constraint firstItem="iX0-vc-e0e" firstAttribute="top" secondItem="wqi-8U-mJc" secondAttribute="top" id="hHn-xP-lih"/>
+                            <constraint firstItem="zuQ-P8-Cem" firstAttribute="bottom" secondItem="60c-3S-hch" secondAttribute="bottom" id="ha3-AZ-7mg"/>
+                            <constraint firstItem="G38-lw-idi" firstAttribute="leading" secondItem="S5m-ip-exj" secondAttribute="leading" id="iqT-bX-SLy"/>
+                            <constraint firstItem="zuQ-P8-Cem" firstAttribute="leading" secondItem="kMe-Tv-9M1" secondAttribute="leading" id="lGh-fw-OJ2"/>
+                            <constraint firstItem="60c-3S-hch" firstAttribute="top" secondItem="Jy5-cV-GxX" secondAttribute="top" constant="137" id="mIt-dp-K9r"/>
+                            <constraint firstItem="iX0-vc-e0e" firstAttribute="trailing" secondItem="60c-3S-hch" secondAttribute="trailing" id="nEL-XF-l3i"/>
+                            <constraint firstItem="C5w-80-SSG" firstAttribute="top" secondItem="YfW-ui-hgU" secondAttribute="bottom" constant="33" id="qI6-d2-75b"/>
+                            <constraint firstItem="kMe-Tv-9M1" firstAttribute="leading" secondItem="Jy5-cV-GxX" secondAttribute="leading" constant="90" id="qMA-7m-Xbr"/>
+                            <constraint firstItem="omW-Z6-fVA" firstAttribute="top" secondItem="QFR-RY-m8P" secondAttribute="bottom" constant="75" id="rhx-6c-AAh"/>
+                            <constraint firstItem="d15-9l-upB" firstAttribute="trailing" secondItem="mcQ-89-Qnf" secondAttribute="trailing" id="w2t-Jc-YHG"/>
+                            <constraint firstItem="iX0-vc-e0e" firstAttribute="bottom" secondItem="wqi-8U-mJc" secondAttribute="bottom" id="wQf-sg-Fln"/>
+                            <constraint firstItem="iX0-vc-e0e" firstAttribute="top" secondItem="60c-3S-hch" secondAttribute="bottom" constant="5" id="xXp-5w-qCb"/>
+                            <constraint firstItem="wqi-8U-mJc" firstAttribute="trailing" secondItem="sm7-Dk-q3d" secondAttribute="trailing" id="zXx-dA-qey"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="designedView" id="AKb-hf-7DF"/>
+                    <connections>
+                        <outlet property="lbScore" destination="sm7-Dk-q3d" id="9ly-tb-pcr"/>
+                        <outletCollection property="cardViewArray" destination="C5w-80-SSG" id="ci1-Rk-Bfn"/>
+                        <outletCollection property="cardViewArray" destination="kMe-Tv-9M1" id="7uk-DO-ImJ"/>
+                        <outletCollection property="cardViewArray" destination="G38-lw-idi" id="1BT-kc-CNz"/>
+                        <outletCollection property="cardViewArray" destination="mcQ-89-Qnf" id="ln2-Vs-kX3"/>
+                        <outletCollection property="cardViewArray" destination="60c-3S-hch" id="aJc-Jf-ACM"/>
+                        <outletCollection property="cardViewArray" destination="zuQ-P8-Cem" id="aCd-e1-txb"/>
+                        <outletCollection property="cardViewArray" destination="d15-9l-upB" id="mMI-2T-o9T"/>
+                        <outletCollection property="cardViewArray" destination="S5m-ip-exj" id="RWv-CL-T8c"/>
+                        <outletCollection property="cardViewArray" destination="iX0-vc-e0e" id="TwV-ZD-Eqx"/>
+                        <outletCollection property="cardViewArray" destination="wqi-8U-mJc" id="5Qv-Aa-xLV"/>
+                        <outletCollection property="cardViewArray" destination="Fcb-gm-Awe" id="NXo-XO-fml"/>
+                        <outletCollection property="cardViewArray" destination="dla-M4-9Hm" id="mlz-El-0Gw"/>
+                    </connections>
+                </viewController>
+                <tapGestureRecognizer id="TDs-hf-mBx">
+                    <connections>
+                        <action selector="tapCard:" destination="u0m-KZ-mSh" id="T6w-kU-DqT"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="y0F-sc-5Oz">
+                    <connections>
+                        <action selector="tapCard:" destination="u0m-KZ-mSh" id="Jk5-eJ-mmw"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="OvD-Gd-uPR">
+                    <connections>
+                        <action selector="tapCard:" destination="u0m-KZ-mSh" id="eyL-Jc-yfC"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="6Wx-pJ-FjS">
+                    <connections>
+                        <action selector="tapCard:" destination="u0m-KZ-mSh" id="y6A-yr-i9O"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="QYU-F2-4PE">
+                    <connections>
+                        <action selector="tapCard:" destination="u0m-KZ-mSh" id="8dr-X7-inQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="t4J-NR-heQ">
+                    <connections>
+                        <action selector="tapCard:" destination="u0m-KZ-mSh" id="992-Qr-QzG"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="lxs-Lm-5Z3">
+                    <connections>
+                        <action selector="tapCard:" destination="u0m-KZ-mSh" id="YLI-el-Ptj"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ZF4-m8-AYS">
+                    <connections>
+                        <action selector="tapCard:" destination="u0m-KZ-mSh" id="eW3-Wf-OeH"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="6gn-rB-BgR">
+                    <connections>
+                        <action selector="tapCard:" destination="u0m-KZ-mSh" id="QaC-Rm-EoS"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Amm-8W-ZxX">
+                    <connections>
+                        <action selector="tapCard:" destination="u0m-KZ-mSh" id="Q7z-bz-RER"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="rOa-u7-7jD">
+                    <connections>
+                        <action selector="tapCard:" destination="u0m-KZ-mSh" id="cU3-Eq-LOc"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="lUc-So-G3x">
+                    <connections>
+                        <action selector="tapCard:" destination="u0m-KZ-mSh" id="WTX-t3-Phw"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="228" y="575"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="i3E-yK-sV1">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="wz9-Jp-iex" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="NUC-x1-D8F">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="di2-76-ZId"/>
+                        <segue destination="u0m-KZ-mSh" kind="relationship" relationship="viewControllers" id="OMw-Bg-dgE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AfQ-NP-tcm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-412" y="337"/>
         </scene>
     </scenes>
     <resources>
