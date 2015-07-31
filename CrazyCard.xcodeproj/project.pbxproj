@@ -13,7 +13,7 @@
 		73641FE61B5C8DBA003CF048 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 73641FE51B5C8DBA003CF048 /* Deck.m */; };
 		73641FE91B5C949D003CF048 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 73641FE81B5C949D003CF048 /* PlayingCard.m */; };
 		73641FEC1B5C9B9D003CF048 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 73641FEB1B5C9B9D003CF048 /* PlayingCardDeck.m */; };
-		739D49EB1B69C22800AD6C7D /* PlayingCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 739D49EA1B69C22800AD6C7D /* PlayingCardView.m */; };
+		736473381B6B2C2A006E9289 /* PlayingCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 736473371B6B2C2A006E9289 /* PlayingCardView.m */; };
 		739D49EE1B69CA1F00AD6C7D /* CardDesignedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 739D49ED1B69CA1F00AD6C7D /* CardDesignedViewController.m */; };
 		73DC73771B3BD1BA00361D11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73DC73761B3BD1BA00361D11 /* Foundation.framework */; };
 		73DC73791B3BD1BA00361D11 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73DC73781B3BD1BA00361D11 /* CoreGraphics.framework */; };
@@ -54,8 +54,8 @@
 		73641FE81B5C949D003CF048 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
 		73641FEA1B5C9B9D003CF048 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
 		73641FEB1B5C9B9D003CF048 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
-		739D49E91B69C22800AD6C7D /* PlayingCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardView.h; path = ../../SuperCard/SuperCard/PlayingCardView.h; sourceTree = "<group>"; };
-		739D49EA1B69C22800AD6C7D /* PlayingCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardView.m; path = ../../SuperCard/SuperCard/PlayingCardView.m; sourceTree = "<group>"; };
+		736473361B6B2C2A006E9289 /* PlayingCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardView.h; sourceTree = "<group>"; };
+		736473371B6B2C2A006E9289 /* PlayingCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardView.m; sourceTree = "<group>"; };
 		739D49EC1B69CA1F00AD6C7D /* CardDesignedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardDesignedViewController.h; sourceTree = "<group>"; };
 		739D49ED1B69CA1F00AD6C7D /* CardDesignedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardDesignedViewController.m; sourceTree = "<group>"; };
 		73DC73731B3BD1BA00361D11 /* CrazyCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazyCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,8 +192,8 @@
 		73DC73AC1B3BD25700361D11 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				739D49E91B69C22800AD6C7D /* PlayingCardView.h */,
-				739D49EA1B69C22800AD6C7D /* PlayingCardView.m */,
+				736473361B6B2C2A006E9289 /* PlayingCardView.h */,
+				736473371B6B2C2A006E9289 /* PlayingCardView.m */,
 				73DC73881B3BD1BA00361D11 /* Main.storyboard */,
 			);
 			name = View;
@@ -329,10 +329,10 @@
 				734A0C181B5CEB8A00F11C8D /* CardMatchGame.m in Sources */,
 				739D49EE1B69CA1F00AD6C7D /* CardDesignedViewController.m in Sources */,
 				73DC73831B3BD1BA00361D11 /* main.m in Sources */,
+				736473381B6B2C2A006E9289 /* PlayingCardView.m in Sources */,
 				73641FEC1B5C9B9D003CF048 /* PlayingCardDeck.m in Sources */,
 				73DC738D1B3BD1BA00361D11 /* CardViewController.m in Sources */,
 				73641FE31B5C8B3F003CF048 /* Card.m in Sources */,
-				739D49EB1B69C22800AD6C7D /* PlayingCardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
